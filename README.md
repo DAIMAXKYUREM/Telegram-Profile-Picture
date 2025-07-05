@@ -1,15 +1,15 @@
 # Pinterest to Telegram PFP Automation 🔄🖼️
 
-Automatically scrapes anime profile pictures from Pinterest, processes them with YOLOv5 for cropping, and updates your Telegram profile picture.
+Automatically profile pictures from ur Pinterest feed, processes them with YOLOv11n for cropping, and updates your Telegram profile picture.
 
 ---
 
 ## 🚀 Features
 
-- Scrapes Pinterest for anime-themed profile pictures
-- Uses custom-trained YOLOv5 to crop faces
+- Scrapes Pinterest for profile pictures
+- Uses custom-trained YOLOv11n to crop faces
 - Falls back to face detection if YOLO fails
-- Automatically updates Telegram PFP every 12 hours
+- Auto-generates the required Telegram session on first run.
 - Saves logs and history of updates
 
 ---
@@ -21,7 +21,7 @@ imagescrape/
 
 ├── pinterest.py # Scraper for Pinterest images
 
-├── gen_session.py # Generates Telegram session
+├── model.pt # Main image filtering model
 
 ├── log.txt # Log of PFP update activity
 
@@ -62,7 +62,12 @@ cd Telegram-Profile-Picture
 2. Install Dependencies:
 pip install -r requirements.txt
 
-3. Run the Scraper and Updater:
+3.Set your Telegram credentials in .env:
+API_ID=your_api_id
+API_HASH=your_api_hash
+PHONE_NUMBER=+1234567890
+
+4. Run the Scraper and Updater:
 python imagescrape/pinterest.py
 
 🔁 Automate with Cron (Linux):
