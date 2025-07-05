@@ -16,21 +16,36 @@ Automatically scrapes anime profile pictures from Pinterest, processes them with
 
 ## 📁 Project Structure
 imagescrape/
+
 │
+
 ├── pinterest.py # Scraper for Pinterest images
+
 ├── gen_session.py # Generates Telegram session
+
 ├── log.txt # Log of PFP update activity
+
 ├── history.json # History of updated images
+
 ├── myprofile.session # Telegram session file (DO NOT SHARE)
+
 │
 ├── pinterest_images/ # Folder where scraped images are saved
+
 │ ├── img_0.jpg
+
 │ └── ...
+
 │
+
 ├── utils/
+
 │ ├── crop_utils.py # YOLOv5 + face detection logic
+
 │ └── telegram_updater.py # Updates Telegram profile picture
+
 │
+
 └── requirements.txt
 
 
