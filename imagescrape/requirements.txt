@@ -1,0 +1,12 @@
+python-dotenv
+selenium
+python-telegram-bot
+opencv-python
+torch
+ultralytics
+pyrogram==2.0.106
+tgcrypto==1.2.5
+telethon==1.34.0
+termcolor==2.4.0
+pyfiglet==1.0.2
+Pillow
