@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+__pycache__/
+*.pyc
+imagescrape/myprofile.session
+imagescrape/log.txt
+imagescrape/history.json
+imagescrape/pinterest_images/
+
 # Distribution / packaging
 .Python
 build/
